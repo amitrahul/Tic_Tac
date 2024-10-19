@@ -1,8 +1,10 @@
-const Card = () => {
+import Icon from "../Icon/Icon";
+import "./Card.css";
+const Card = ({ iconName }) => {
   return (
     <>
-      <div>
-        <span></span>
+      <div className="card">
+        <Icon name={iconName || ""} />
       </div>
     </>
   );
