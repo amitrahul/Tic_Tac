@@ -10,3 +10,14 @@
 .turn-highlight {
   color: wheat;
 }
+
+.reset_btn {
+  padding: 1rem;
+  color: white;
+  background-color: var(--resetGreen);
+  border-radius: 5%;
+  border: none;
+  &:hover {
+    background-color: rosybrown;
+  }
+}

@@ -12,9 +12,8 @@ export const isWinner = (board, symbol) => {
     return symbol;
   if (board[1] === board[4] && board[4] === board[7] && board[7] === symbol)
     return symbol;
-  if (board[2] === board[5] && board[5] === board[5] && board[8] === symbol)
+  if (board[2] === board[5] && board[5] === board[8] && board[8] === symbol)
     return symbol;
-
   // check for diagonal
   if (board[0] === board[4] && board[4] === board[8] && board[8] === symbol)
     return symbol;
