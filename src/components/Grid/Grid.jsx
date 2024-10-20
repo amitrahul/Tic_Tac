@@ -10,7 +10,6 @@ const Grid = ({ numberOfCards }) => {
   const [winner, setWinner] = useState("");
 
   const play = (position) => {
-    console.log("moved played");
     board[position] = turn ? "O" : "X";
     setBoard([...board]);
     const win = isWinner(board, turn ? "O" : "X");
@@ -45,7 +44,13 @@ const Grid = ({ numberOfCards }) => {
           })} */}
 
         {board.map((boxName, id) => (
-          <Card key={id} player={boxName} onPlay={play} position={id} />
+          <Card
+            key={id}
+            player={boxName}
+            onPlay={play}
+            position={id}
+            gameEnd={(winner && true) || false}
+          />
         ))}
       </div>
     </>
