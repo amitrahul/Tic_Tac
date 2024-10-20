@@ -6,3 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
+.turn-highlight {
+  color: wheat;
+}
